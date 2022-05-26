@@ -10,61 +10,120 @@
     <title>Spotify</title>
 </head>
 <body>
-    <main>
-        <div class="nav-upgrade">
-           <a href="#" class="upgrade">EFFETTUA L'UPGRADE</a> 
-        </div>
-        <div class="flex">
-            <div class="nav">
-                <div class="logo"><img src="img/logo.svg" alt="logo"></div>
-                <ul>
-                    <li><img src="./img/home.svg" alt=""><a href="#">Home</a></li>
-                    <li><img src="./img/search.svg" alt=""><a href="#">Cerca</a></li>
-                    <li><img src="./img/libreria.svg" alt=""><a href="#">La tua libreria</a></li>
+    
+    <div class="flex">
+        
+        <section class="nav">
+            <div class="logo"><img src="img/logo.svg" alt="logo"></div>
+            <ul>
+                <li><img src="./img/home.svg" alt=""><a href="#">Home</a></li>
+                <li><img src="./img/search.svg" alt=""><a href="#">Cerca</a></li>
+                <li><img src="./img/libreria.svg" alt=""><a href="#">La tua libreria</a></li>
+            </ul>
+            <div class="playlist">
+                <h3>PLAYLIST</h3>
+                <a href="#" class="plus"><i class="fa-solid fa-plus"></i></a>
+                <a href="#">Crea playlist</a>
+                <ul class="name-playlist">
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
                 </ul>
-                <div class="playlist">
-                    <h3>PLAYLIST</h3>
-                    <a href="#" class="plus"><i class="fa-solid fa-plus"></i></a>
-                    <a href="#">Crea playlist</a>
-                    <ul class="name-playlist">
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                    </ul>
+            </div>
+            <div class="app">
+                <a href="#" class="arrow"><i class="fa-solid fa-arrow-down"></i></a>
+                <a href="#">Installa app</a>
+                <hr>
+                <div class="profile">
+                    <img src="./img/profile.svg" alt="profile">
+                    <span>John Doe</span>
                 </div>
-                <div class="app">
-                    <a href="#" class="arrow"><i class="fa-solid fa-arrow-down"></i></a>
-                    <a href="#">Installa app</a>
-                    <hr>
-                    <div class="profile">
-                        <img src="./img/profile.svg" alt="profile">
-                        <span>John Doe</span>
-                    </div>
-                </div>
+            </div>
+        </section>
+        
+        <main>
+            <div class="nav-upgrade">
+                <a href="#" class="upgrade">EFFETTUA L'UPGRADE</a> 
             </div>
             <div class="nav-bar">
                 <div class="bar">
-                   <a href="#">IN EVIDENZA</a>
-                   <a href="#">PODCAST</a>
-                   <a href="#">CLASSIFICHE</a>
-                   <a href="#">GENERI E MOOD</a>
-                   <a href="#">NUOVE USCITE</a>
-                   <a href="#">SCOPRI</a>
+                    <a href="#">IN EVIDENZA</a>
+                    <a href="#">PODCAST</a>
+                    <a href="#">CLASSIFICHE</a>
+                    <a href="#">GENERI E MOOD</a>
+                    <a href="#">NUOVE USCITE</a>
+                    <a href="#">SCOPRI</a>
                 </div>
                 <div class="recently-played">
                     <h2>Recently played</h2>
-                    <img src="./img/metal_lifting.jpg" alt="heavy metal">
+                    <div class="album">
+                      <div class="minialbum">
+                          <img src="./img/metal_lifting.jpg" alt="heavy metal">
+                          <h3>Heavy metal</h3>
+                          <span>Subtitle</span>
+                        </div>  
+                      <div class="minialbum">
+                          <img src="./img/stranger.jpeg" alt="stranger">
+                          <h3>Stranger Things Vol. <br>
+                              1 (a Netflix Original <br>
+                              Series Soundtrack)
+                          </h3>
+                          <span>Kyle Dixon & Michael Stein</span>
+                        </div> 
+                      <div class="minialbum"><img src="./img/aquietplace.jpeg" alt="place">
+                          <h3>A quiet place</h3>
+                          <span>Subtitle</span>
+                      </div> 
+                      <div class="minialbum"><img src="./img/split.jpeg" alt="split">
+                        <h3>Split</h3>
+                        <span>Subtitle</span>
+                      </div> 
+                      <div class="minialbum"><img src="./img/cure.jpeg" alt="cure">
+                          <h3>A cure for wellness</h3>
+                          <span>Subtitle</span>
+                      </div>  
+                      <div class="minialbum"><img src="./img/sinister.jpeg" alt="sinister">
+                          <h3>Sinister</h3>
+                          <span>Subtitle</span>
+                      </div>  
+                    </div>
+                    <div class="title">
+                        <h2>Creato per John Doe</h2>
+                        <span>Più ascolti, più accurati saranno i suggerimenti</span>
+                    </div>
+                    <div class="album2">
+                        <div class="minialbum2">
+                            <img src="./img/radar.jpeg" alt="radar">
+                            <h3>Release radar</h3>
+                          </div>  
+                        <div class="minialbum2">
+                            <img src="./img/mixdaily.jpeg" alt="mix">
+                            <h3>Daily mix 1</h3>
+                        </div> 
+                    </div>
+                    <div class="title">
+                        <h2>Artisti più popolari</h2>
+                        <span>Più ascolti, più accurati saranno i suggerimenti</span>
+                    </div>
+                    <div class="album2">
+                        <div class="minialbum3">
+                            <img src="./img/youg.jpeg" alt="youg">
+                            <h3>Young beautiful</h3>
+                          </div>  
+                        <div class="minialbum3">
+                            <img src="./img/einaudi.jpeg" alt="einaudi">
+                            <h3>Einaudi</h3>
+                        </div> 
                 </div> 
             </div>
-            
-        </div>
-        
-        
-        
-    </main>
+        </main>
+    </div>
+    <footer>
+
+    </footer>
 </body>
 </html>
