@@ -42,7 +42,8 @@ main{
     width: 300px;
     padding: 20px;
     height: calc(100vh - 80px) ;
-    overflow: hidden;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 .logo{
@@ -90,7 +91,7 @@ a{
 }
 
 .app{
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .arrow{
@@ -325,6 +326,10 @@ footer{
     .minialbum2{
         margin: 5px;
     }
+
+    .minialbum3{
+        margin: 5px;
+    }
 }
 
 @media all and (max-width: 700px){
@@ -342,6 +347,14 @@ footer{
     }
 
     .minialbum{
+        width: calc(100% / 2 - 10px);
+    }
+
+    .minialbum2{
+        width: calc(100% / 2 - 10px);
+    }
+
+    .minialbum3{
         width: calc(100% / 2 - 10px);
     }
 
@@ -363,6 +376,41 @@ footer{
 }
 
 @media all and (max-width: 600px){
-    
+
+    .minialbum{
+        width: calc(100% / 2);
+    }
+
+    .minialbum2{
+        width: calc(100% / 2);
+    }
+
+    .minialbum3{
+        width: calc(100% / 2);
+    }
+
+    .album2{
+        flex-wrap: nowrap;
+    }
+
+   .recently-played img{
+        width: 170px;
+    }
+
+    .playbar1{
+        width: 65px;
+    }
+
+    .playbar2{
+        width: 125px;
+    }
+
+    .playbar3{
+        width: 15px;
+    }
+
+    .playbar4{
+        width: 90px;
+    }
 }
 
