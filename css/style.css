@@ -309,10 +309,7 @@ footer{
 /* Responsive */
 
 @media all and (max-width: 1100px) {
-    .minialbum{
-        width: calc(100% / 4);
-    }
-
+    
     .block{
         display: block;
     }
@@ -320,12 +317,52 @@ footer{
     .nav-upgrade{
         padding-right: 65px;
     }
+    
+    .minialbum{
+        width: calc(100% / 4);
+    }
+
+    .minialbum2{
+        margin: 5px;
+    }
 }
 
 @media all and (max-width: 700px){
-    footer{
-        display: flex;
-        
+    
+    .nav-upgrade{
+        padding-right: 100px;
     }
+
+    .a-block{
+        display: block;
+    }
+
+    .block{
+        display: inline-block;
+    }
+
+    .minialbum{
+        width: calc(100% / 2 - 10px);
+    }
+
+    .playbar1{
+        width: 65px;
+    }
+
+    .playbar2{
+        width: 125px;
+    }
+
+    .playbar3{
+        width: 15px;
+    }
+
+    .playbar4{
+        width: 90px;
+    }
+}
+
+@media all and (max-width: 600px){
+    
 }
 
