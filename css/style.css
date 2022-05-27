@@ -41,6 +41,7 @@ main{
     padding-top: 25px;
     position: fixed;
     width: 85%;
+    z-index: 1;
 }
 
 .upgrade{
@@ -80,6 +81,11 @@ main{
     display: none;
 }
 
+.accessories a:hover{
+    display: inline;
+    color: white;
+}
+
 ul{
     padding-top: 20px;
 }
@@ -115,6 +121,17 @@ a{
     padding: 10px;
 }
 
+.playlist h3:hover {
+    display: block;
+    color: white;
+    cursor: pointer;
+}
+
+.creates-playlist:hover{
+    display: inline;
+    color: white;
+}
+
 .min-height{
     height: 180px;
     overflow: auto;
@@ -128,6 +145,16 @@ a{
     padding-bottom: 20px;
 }
 
+.name-playlist li a:hover{
+    display: inline;
+    color: white;
+}
+
+.app a:hover{
+    display: inline;
+    color: white;
+}
+
 .profile img{
     background-color: grey;
 }
@@ -136,6 +163,8 @@ a{
     border: 1px solid lightslategray;
     color: grey;
     padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
     border-radius: 50%;
     font-size: 10px;
 }
@@ -165,11 +194,6 @@ hr{
     padding: 5px;
 }
 
-.a-block{
-    display: inline;
-    padding-top: 40px;
-}
-
 .nav-bar{
     width: 100%;
     background-color: #1a192b;
@@ -177,14 +201,25 @@ hr{
     padding-top: 80px;
 }
 
-.bar {
+.bar{
     padding: 10px;
     text-align: center;
+}
+
+.bar a:hover{
+    display: inline;
+    color: white;
 }
 
 .a-none{
     display: none;
 }
+
+.a-block{
+    display: inline;
+    padding-top: 40px;
+}
+
 
 .recently-played{
     padding: 20px;
@@ -209,6 +244,26 @@ hr{
 .minialbum{
     width: calc(100% / 6);
     text-align: center;
+    position: relative;
+}
+
+.play-button1{
+    background-color: rgba(226, 217, 217, 0.8);
+    color: gray;
+    border-radius: 50%;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    top: 37%;
+    transform: translate(-50% , -50%);
+    display: none;
+}
+
+.minialbum:hover .play-button1{
+    display: block;
 }
 
 .minialbum h3{
@@ -224,10 +279,30 @@ hr{
 .minialbum2{
     text-align: center;
     margin: 10px;
+    position: relative;
+}
+
+.play-button2{
+    background-color: rgba(226, 217, 217, 0.8);
+    color: gray;
+    border-radius: 50%;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    top: 47%;
+    transform: translate(-50% , -50%);
+    display: none;
 }
 
 .minialbum2 h3{
     color: white;
+}
+
+.minialbum2:hover .play-button2{
+    display: block;
 }
 
 .title{
@@ -241,10 +316,15 @@ hr{
 .minialbum3{
     text-align: center;
     margin: 10px;
+    position: relative;
 }
 
 .minialbum3 img{
     border-radius: 50%;
+}
+
+.minialbum3:hover .play-button2{
+    display: block;
 }
 
 footer{
@@ -276,6 +356,16 @@ footer{
 .link{
     padding-left: 40px;
     padding-top: 15px;
+}
+
+.link .red:hover{
+    color: red;
+    display: inline;
+}
+
+.link .green:hover{
+    color: green;
+    display: inline;
 }
 
 .play{
