@@ -41,14 +41,20 @@ main{
     background-color: black;
     width: 300px;
     padding: 20px;
-    height: calc(100vh - 80px) ;
-    overflow: auto;
-    overflow-x: hidden;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo{
     padding-bottom: 20px;
     width: 200px;
+}
+
+ul{
+    padding-top: 20px;
 }
 
 li{
@@ -82,6 +88,11 @@ a{
     padding: 10px;
 }
 
+.min-height{
+    height: 180px;
+    overflow: auto;
+}
+
 .name-playlist{
     padding-top: 20px;
 }
@@ -90,9 +101,7 @@ a{
     padding-bottom: 20px;
 }
 
-.app{
-    padding-top: 100px;
-}
+
 
 .arrow{
     border: 1px solid lightslategray;
@@ -127,7 +136,9 @@ hr{
     padding: 5px;
 }
 
-
+.a-block{
+    display: inline;
+}
 
 .nav-bar{
     width: 100%;
@@ -151,7 +162,7 @@ hr{
 }
 
 .recently-played img{
-    width: 200px;
+    width: 185px;
     padding-top: 20px;
 }
 
@@ -162,7 +173,7 @@ hr{
 }
 
 .minialbum{
-    width: calc(100% / 6 - 10px);
+    width: calc(100% / 6);
     text-align: center;
 }
 
@@ -318,6 +329,10 @@ footer{
     .nav-upgrade{
         padding-right: 65px;
     }
+
+   .a-block{
+        display: inline;
+    }
     
     .minialbum{
         width: calc(100% / 4);
@@ -329,6 +344,10 @@ footer{
 
     .minialbum3{
         margin: 5px;
+    }
+
+    .text {
+        padding-left: 5px;
     }
 }
 
@@ -397,12 +416,16 @@ footer{
         width: 170px;
     }
 
+    .text {
+        padding-left: 5px;
+    }
+
     .playbar1{
-        width: 65px;
+        width: 40px;
     }
 
     .playbar2{
-        width: 125px;
+        width: 100px;
     }
 
     .playbar3{
@@ -410,7 +433,7 @@ footer{
     }
 
     .playbar4{
-        width: 90px;
+        width: 40px;
     }
 }
 
