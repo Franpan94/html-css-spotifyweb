@@ -10,7 +10,28 @@ main{
    height: calc(100vh - 80px);
    overflow: auto;
    width: 100%;
+   overflow-x: hidden;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
 .nav-upgrade{
     background-color: rgba(0, 0, 0, 0.9);
@@ -23,7 +44,7 @@ main{
 }
 
 .upgrade{
-    margin-right: 20px;
+    margin-right: 40px;
     height: 40px;
     width: 250px;
     text-align: center;
@@ -51,6 +72,12 @@ main{
 .logo{
     padding-bottom: 20px;
     width: 200px;
+}
+
+.logosmall{
+    width: 30px;
+    margin-left: 5px;
+    display: none;
 }
 
 ul{
@@ -101,7 +128,9 @@ a{
     padding-bottom: 20px;
 }
 
-
+.profile img{
+    background-color: grey;
+}
 
 .arrow{
     border: 1px solid lightslategray;
@@ -138,6 +167,7 @@ hr{
 
 .a-block{
     display: inline;
+    padding-top: 40px;
 }
 
 .nav-bar{
@@ -150,6 +180,10 @@ hr{
 .bar {
     padding: 10px;
     text-align: center;
+}
+
+.a-none{
+    display: none;
 }
 
 .recently-played{
@@ -330,6 +364,10 @@ footer{
         padding-right: 65px;
     }
 
+    .upgrade{
+        margin-right: 20px;
+    }
+
    .a-block{
         display: inline;
     }
@@ -365,16 +403,20 @@ footer{
         display: inline-block;
     }
 
+    .recently-played img{
+        width: 200px;
+    }
+
     .minialbum{
-        width: calc(100% / 2 - 10px);
+        width: calc(100% / 2 - 5px);
     }
 
     .minialbum2{
-        width: calc(100% / 2 - 10px);
+        width: calc(100% / 2 - 5px);
     }
 
     .minialbum3{
-        width: calc(100% / 2 - 10px);
+        width: calc(100% / 2 - 5px);
     }
 
     .playbar1{
@@ -396,6 +438,42 @@ footer{
 
 @media all and (max-width: 600px){
 
+    .nav-upgrade{
+        width: 100%;
+    }
+
+    .upgrade{
+        margin-right: -35px;
+    }
+
+    .none{
+        display: none;
+    }
+
+    .a-none{
+        display: inline;
+    }
+
+    .nav{
+        width: 60px;
+    }
+
+    .padding{
+        padding-right: 10px;
+    }
+
+    .b-none{
+       display: none;
+    }
+
+    .logosmall{
+        display: block;
+    }
+
+    .recently-played img{
+        width: 230px;
+    }
+
     .minialbum{
         width: calc(100% / 2);
     }
@@ -410,10 +488,6 @@ footer{
 
     .album2{
         flex-wrap: nowrap;
-    }
-
-   .recently-played img{
-        width: 170px;
     }
 
     .text {
